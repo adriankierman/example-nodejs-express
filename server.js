@@ -1,12 +1,14 @@
 var express = require('express');
 var app = express();
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', function(req, res){
   var message = process.env.POWERED_BY;
   if (typeof(message) == "undefined") {
   	message = "GP - GovPaas from Nava"
   }
-  res.send('Powered by ' + message);
+  res.send('<img href="/public/logo.png"><p></img>Powered by ' + message + '</p>');
 });
 
 /* Use PORT environment variable if it exists */

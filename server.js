@@ -4,7 +4,7 @@ var app = express();
 app.get('/', function(req, res){
   var message = process.env.POWERED_BY;
   if (typeof(message) == "undefined") {
-  	message = "Deis"
+  	message = "GP - GovPaas from Nava"
   }
   res.send('Powered by ' + message);
 });

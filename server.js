@@ -8,7 +8,7 @@ app.get('/', function(req, res){
   if (typeof(message) == "undefined") {
   	message = "GP - GovPaas from Nava"
   }
-  res.send('<img src="logo.png"/><p>EmPowered by ' + message + '</p>');
+  res.send('<img src="logo.png"/><p>Powered by ' + message + '</p>');
 });
 
 /* Use PORT environment variable if it exists */

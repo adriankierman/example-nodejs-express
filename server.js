@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res){
   var message = process.env.POWERED_BY;
   if (typeof(message) == "undefined") {
-  	message = "GP - GovPaas from Nava"
+  	message = "GP"
   }
   res.send('<img src="logo.png"/><p>EmPowered by ' + message + '</p>');
 });
